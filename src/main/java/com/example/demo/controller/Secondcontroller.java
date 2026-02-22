@@ -22,4 +22,10 @@ public int sec(@RequestParam int age){
         return "hello";
  }
 
+
+ @GetMapping("/kc")
+ public String Place(){
+        return "Place is Tikapur " ;
+    }
+
 }
