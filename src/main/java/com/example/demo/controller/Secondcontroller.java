@@ -1,11 +1,21 @@
 package com.example.demo.controller;
 
 
+import com.example.demo.Dto.CourseDto;
+import com.example.demo.servicce.CourseService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping
 public class Secondcontroller {
+
+
+    private final CourseService courseService;
+
+    public Secondcontroller(CourseService courseService) {
+        this.courseService = courseService;
+    }
+
     @GetMapping("/kris")
             public String Second()
     {
@@ -29,9 +39,8 @@ public int sec(@RequestParam int age){
     }
 
     @PostMapping("/sp")
-    public String course(@RequestParam String courses , @RequestParam int semester){
-        return " Course : " + courses + " Semester :" + semester;
-
+    public String course(@RequestBody CourseDto dto){
+        return courseService.createCourse(dto);
     }
 
 }
