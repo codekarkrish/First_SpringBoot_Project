@@ -17,5 +17,9 @@ public int sec(@RequestParam int age){
 
 }
 
+ @GetMapping("/helloweor")
+    public String name(){
+        return "hello";
+ }
 
 }
