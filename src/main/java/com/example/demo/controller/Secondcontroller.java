@@ -28,4 +28,10 @@ public int sec(@RequestParam int age){
         return "Place is Tikapur " ;
     }
 
+    @PostMapping("/sp")
+    public String course(@RequestParam String courses , @RequestParam int semester){
+        return " Course : " + courses + " Semester :" + semester;
+
+    }
+
 }
