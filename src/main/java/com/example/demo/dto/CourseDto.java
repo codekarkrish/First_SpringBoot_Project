@@ -1,20 +1,22 @@
-package com.example.demo.Dto;
+package com.example.demo.dto;
 
 
 public class CourseDto {
+    private String courses;
+    private int semester;
 
     public CourseDto(String courses,int semester){
         this.courses = courses;
         this.semester = semester;
     }
-    private String courses;
-    private int semester;
+
 
     public String getCourses() {
         return courses;
     }
 
     public void setCourses(String courses) {
+
         this.courses = courses;
     }
   // value line

@@ -1,8 +1,8 @@
 package com.example.demo.controller;
 
 
-import com.example.demo.Dto.Signupdto;
-import com.example.demo.servicce.Signupservice;
+import com.example.demo.dto.Signupdto;
+import com.example.demo.service.Signupservice;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class Firstcontroller {
 
     private final Signupservice signs;
-    Firstcontroller( Signupservice signs){
+    public Firstcontroller( Signupservice signs){
         this.signs = signs;
 
 
@@ -34,8 +34,4 @@ public class Firstcontroller {
     }
 }
 
-//    @PostMapping("/login")
-//    public String  studentLogin(@RequestBody){
-//        return loginService.loginInfo(dto);
-//    }
-//}
+

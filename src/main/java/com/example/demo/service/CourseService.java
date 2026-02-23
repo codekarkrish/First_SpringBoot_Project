@@ -1,6 +1,6 @@
-package com.example.demo.servicce;
+package com.example.demo.service;
 
-import com.example.demo.Dto.CourseDto;
+import com.example.demo.dto.CourseDto;
 
 import org.springframework.stereotype.Service;
 

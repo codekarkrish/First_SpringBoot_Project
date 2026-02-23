@@ -1,7 +1,7 @@
-package com.example.demo.Dto;
+package com.example.demo.dto;
 
 public class Signupdto {
-    //1.chaina variable
+    //1.chaine variable
     //1.1 variable private garne
     private String name;
     private String email;

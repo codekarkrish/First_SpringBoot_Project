@@ -1,8 +1,8 @@
 package com.example.demo.controller;
 
 
-import com.example.demo.Dto.CourseDto;
-import com.example.demo.servicce.CourseService;
+import com.example.demo.dto.CourseDto;
+import com.example.demo.service.CourseService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
